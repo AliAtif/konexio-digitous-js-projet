@@ -14,3 +14,13 @@ var grid = [
 var rover = { 
     direction: "N",
 }
+
+function  turnLeft(rover){
+	console.log();
+};
+ turnLeft(rover)
+
+function turnRight(rover){
+	console.log();
+}; 
+turnRight(rover)
