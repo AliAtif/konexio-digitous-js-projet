@@ -14,21 +14,45 @@ var grid = [
 var rover = { 
     
     direction: "N",
-    travelLog: ""
+    travelLog: []
 };
 
 
-function  turnLeft(rover){
-    if()
-    console.log();
+function  turnRight(rover){
+    if(rover.direction === "N") {
+        rover.direction = "E";
+    }
+    if(rover.direction === "E") {
+        rover.direction = "S";
+    }
+    if(rover.direction === "S") {
+        rover.direction = "W";
+    }
+    if(rover.direction === "W") {
+        rover.direction = "N";
+    }
+    console.log(rover.direction);
 };
- turnLeft(rover)
 
-function turnRight(rover){
-	console.log();
+
+function turnLeft(rover){
+    if(rover.direction === "N") {
+        rover.direction = "W";
+    }
+    if(rover.direction === "W") {
+        rover.direction = "S";
+    }
+    if(rover.direction === "S") {
+        rover.direction = "E";
+    }
+    if(rover.direction === "E") {
+        rover.direction = "N";
+    }
+    console.log(rover.direction);
 }; 
-turnRight(rover)
-
+turnLeft(rover);
+turnRight(rover);
+/*
 function moveForward(rover) {
 
 };
@@ -38,3 +62,4 @@ function pilotRover(l, r, f) {
 
 };
 pilotRover();
+*/
