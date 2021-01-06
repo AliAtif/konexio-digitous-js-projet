@@ -13,8 +13,10 @@ var grid = [
 
 var rover = { 
     
-    direction: "N",
-    travelLog: []
+	direction: "N",
+	x:0,
+	y:0,
+    travelLog: [],
 };
 
 
@@ -50,16 +52,24 @@ function turnLeft(rover){
     }
     console.log(rover.direction);
 }; 
-turnLeft(rover);
-turnRight(rover);
-/*
+
+
 function moveForward(rover) {
+	if(rover.x === 0 && rover.y===0){
+		rover.x=1;
+		rover.y=0;	
+	}
+	console.log(`${rover.x} / ${rover.y}`);
 
 };
-moveForward();
+
 
 function pilotRover(l, r, f) {
 
 };
 pilotRover();
-*/
+
+
+turnLeft(rover);
+turnRight(rover);
+moveForward(rover);
