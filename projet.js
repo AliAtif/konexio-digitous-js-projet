@@ -23,14 +23,13 @@ var rover = {
 function  turnRight(rover){
     if(rover.direction === "N") {
         rover.direction = "E";
-    }
-    if(rover.direction === "E") {
+    }else if(rover.direction === "E"){
         rover.direction = "S";
     }
-    if(rover.direction === "S") {
+     else if(rover.direction === "S") {
         rover.direction = "W";
     }
-    if(rover.direction === "W") {
+   else if(rover.direction === "W") {
         rover.direction = "N";
     }
     console.log(rover.direction);
@@ -41,13 +40,13 @@ function turnLeft(rover){
     if(rover.direction === "N") {
         rover.direction = "W";
     }
-    if(rover.direction === "W") {
+    else if(rover.direction === "W") {
         rover.direction = "S";
     }
-    if(rover.direction === "S") {
+    else if(rover.direction === "S") {
         rover.direction = "E";
     }
-    if(rover.direction === "E") {
+    else if(rover.direction === "E") {
         rover.direction = "N";
     }
     console.log(rover.direction);
@@ -55,12 +54,15 @@ function turnLeft(rover){
 
 
 function moveForward(rover) {
-	if(rover.x === 0 && rover.y===0){
-		rover.x=1;
-		rover.y=0;	
-	}
-	console.log(`${rover.x} / ${rover.y}`);
-
+    for(var i = 0; i < 10; i++ ){
+        if(rover.x !== 10){
+            	rover.x++;		
+             }  console.log(`${rover.x} / ${rover.y}`);
+        if(rover.y !== 10){
+            	rover.y++;		
+             }  console.log(`${rover.x} / ${rover.y}`);   
+    }
+    
 };
 
 
