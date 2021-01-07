@@ -55,12 +55,18 @@ function turnLeft(rover){
 
 function moveForward(rover) {
     for(var i = 0; i < 10; i++ ){
-        if(rover.x !== 10){
-            	rover.x++;		
-             }  console.log(`${rover.x} / ${rover.y}`);
+        if(rover.x !== 10 ){
+            console.log(`${rover.x} / ${rover.y}`);    
+            rover.x++;		
+        };
+         
+    }
+    for(var i = 0; i < 10; i++ ) {
         if(rover.y !== 10){
-            	rover.y++;		
-             }  console.log(`${rover.x} / ${rover.y}`);   
+
+            console.log(`${rover.x} / ${rover.y}`);
+            rover.y++;		
+         } 
     }
     
 };
