@@ -54,35 +54,38 @@ function turnLeft(rover){
 
 
 function moveForward(rover) {
-
+    
     if(rover.direction ==="N"){
-        rover.y++;
-
+        rover.y --;
+        console.log(`${rover.x} / ${rover.y}`);
+    }else if (rover.direction === "E") {
+        rover.x ++;
+        console.log(`${rover.x} / ${rover.y}`);
+    }else if(rover.direction ==="S"){
+        rover.y ++;
+        console.log(`${rover.x} / ${rover.y}`);
+    }else if (rover.direction === "W") {
+        rover.x --;
+        console.log(`${rover.x} / ${rover.y}`);
     }
 
-    // for(var i = 0; i < 10; i++ ){
-    //     if(rover.x !== 10 ){
-    //         console.log(`${rover.x} / ${rover.y}`);    
-    //         rover.x++;		
-    //     };    
-
-    // }
-    // for(var i = 0; i < 10; i++ ) {
-    //     if(rover.y !== 10){
-    //         console.log(`${rover.x} / ${rover.y}`);
-    //         rover.y++;		
-    //      } 
-    // }
+    
     
 };
 
 
 function pilotRover(l, r, f) {
-
+    var r = turnRight;
+    var f = moveForward;
+    var l = turnLeft;
 };
-pilotRover();
+pilotRover("rffrfl");
 
 
 turnLeft(rover);
 turnRight(rover);
+
+
+moveForward(rover);
+moveForward(rover);
 moveForward(rover);
