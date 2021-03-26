@@ -1,0 +1,22 @@
+{
+  "name": "konexio-digitous-js-projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "projet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAtif/konexio-digitous-js-projet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliAtif/konexio-digitous-js-projet/issues"
+  },
+  "homepage": "https://github.com/AliAtif/konexio-digitous-js-projet#readme",
+  "dependencies": {
+    "prompt": "^1.1.0"
+  }
+}
